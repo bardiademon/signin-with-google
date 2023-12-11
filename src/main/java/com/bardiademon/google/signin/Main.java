@@ -63,7 +63,7 @@ public class Main extends AbstractVerticle {
     }
 
     private void getConfig() {
-        final InputStream configResourceStream = ClassLoader.getSystemResourceAsStream("conf-test.json");
+        final InputStream configResourceStream = ClassLoader.getSystemResourceAsStream("conf.json");
         try {
             if (configResourceStream == null) {
                 throw new NullPointerException("Cannot open config file");
